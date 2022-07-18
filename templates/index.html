@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %} Title Index {% endblock %}
+{% load static %}
+{% block content %}
+    <h2>Данные из index.html</h2>
+    
+    <img src="{% static '1.jpg' %}" height="500px">
 
-{% if object_list %}
-<table border="1px">
-    <tr>
-        <th>ID</th>
-        <th>Date</th>
-        <th>Name</th>
-        <th>Phone</th>
-    </tr>
+    {% include 'index_old.html' %}
 
-    {% for object in object_list %}
-        <tr>
-            <td>{{ object.id }}</td>
-            <td>{{ object.order_dt }}</td>
-            <td>{{ object.order_name }}</td>
-            <td>{{ object.order_phone }}</td>
-        </tr>
-    {% endfor %}
-</table>
-{% else %}
-    Нет данных
-{% endif %}
-
-</body>
-</html>
+{% endblock %}
