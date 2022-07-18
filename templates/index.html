@@ -5,7 +5,28 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>{{ grate }}</h1>
-    {{ text }}
+
+{% if object_list %}
+<table border="1px">
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Phone</th>
+    </tr>
+
+    {% for object in object_list %}
+        <tr>
+            <td>{{ object.id }}</td>
+            <td>{{ object.order_dt }}</td>
+            <td>{{ object.order_name }}</td>
+            <td>{{ object.order_phone }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% else %}
+    Нет данных
+{% endif %}
+
 </body>
 </html>
