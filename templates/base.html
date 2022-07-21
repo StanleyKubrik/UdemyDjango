@@ -1,5 +1,5 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <!-- Required meta tags -->
@@ -16,7 +16,7 @@
 <body>
 <nav class="navbar navbar-light bg-light container">
     <a class="navbar-brand logo-top" href="#">
-        <img src="./img/Logo.png" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+        <img src="{% static 'img/Logo.png' %}" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
         Brand Name
     </a>
     <div class="contact-top">
@@ -31,18 +31,22 @@
 
 {% endblock  %}
 
+{% block thanks %}
+
+{% endblock  %}
+
 <footer>
     <div class="container">
         <nav class="navbar navbar-light bg-light container">
             <a class="navbar-brand logo-top" href="#">
-                <img src="./img/Logo.png" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+                <img src="{% static 'img/Logo.png' %}" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
                 Brand Name
             </a>
             <div class="contact-top">
                 <a class="whatsapp-number" href="https://web.whatsapp.com/"></a>
                 <a class="telegram-number" href="https://t.me/"></a>
                 <a class="phone-number text-dark" href="tel:+74957777777">
-                    <h5>+7(495)-777-77-77</h5></a>
+                    <h5>+38 (099) 085-25-93</h5></a>
             </div>
         </nav>
     </div>

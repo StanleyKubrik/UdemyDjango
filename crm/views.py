@@ -13,13 +13,12 @@ def first_page(request):
     })
 
 
-def thanks_page(request):
+def thanks(request):
     name = request.POST['name']
     phone = request.POST['phone']
     order = Order(order_name=name, order_phone=phone)
     order.save()
-    return render(request, 'thanks_page.html', {
+    return render(request, 'thanks.html', {
         'name': name,
-        'phone': phone,
-        'req': request
+        'phone': phone
     })
