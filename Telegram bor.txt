@@ -1,0 +1,5 @@
+http://t.me/ValeriyaDessertsBot
+
+5569108599:AAGLbPq79RdyDQbHMO0hkuLBnRA5eX-oVDg
+
+https://api.telegram.org/bot5569108599:AAGLbPq79RdyDQbHMO0hkuLBnRA5eX-oVDg/sendMessage?chat_id=-652190355&text=test
