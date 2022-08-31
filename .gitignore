@@ -213,3 +213,7 @@ ENV/
 /site
 
 # End of https://www.gitignore.io/api/macos,linux,django,python,pycharm
+/cms/migrations/
+/crm/migrations/
+/price/migrations/
+/telebot/migrations/
