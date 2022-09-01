@@ -1,6 +1,6 @@
 {% extends "admin/base.html" %}
 {% load static %}
-<link href="{% static 'external.css' %}" rel="stylesheet">
+<link href="{% static external.css %}" rel="stylesheet">
 
 {% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} |
     {{ site_title|default:_('Django site admin') }}{% endblock %}
